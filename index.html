@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Otomata ke Regex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#file">File</a>
+            <a href="#edit">Edit</a>
+            <a href="#run">Run</a>
+            <a href="#about">About Us</a>
+        </nav>
+        
+        <h1>Konversi Finite Automata ke Regular Expressions</h1>
+        
+        <section id="file">
+            <h2>File</h2>
+            <input type="file" id="uploadFile">
+        </section>
+        
+        <section id="edit">
+            <h2>Edit</h2>
+            <textarea id="editor">Tulis atau edit kode di sini...</textarea>
+        </section>
+        
+        <section id="run">
+            <h2>Run</h2>
+            <button onclick="runCode()">Jalankan</button>
+            <pre id="output"></pre>
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Website ini dibuat untuk membantu memahami konversi Finite Automata ke Regular Expressions.</p>
+        </section>
+    </div>
+
+    <script>
+        function runCode() {
+            let code = document.getElementById("editor").value;
+            document.getElementById("output").innerText = "Hasil eksekusi: " + code;
+        }
+    </script>
+</body>
+</html>
